@@ -7,15 +7,6 @@
 # Space complexity: O(1)
 
 def count_digits(n: int) -> int:
-    """Returns the number of digits in n.
-    
-    Args:
-    n: int - The integer to count the digits of.
-    
-    Returns:
-    int - The number of digits in n.
-    """
-
     count = 0
 
     while n > 0:
