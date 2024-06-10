@@ -6,6 +6,11 @@
 # Time complexity: O(log(n))
 # Space complexity: O(1)
 
+# How does it work?
+# The function iteratively divides 'n' by 10
+# and increments a counter until 'n' is 0.
+# The counter is then returned as the result.
+
 def count_digits(n: int) -> int:
     count = 0
 
