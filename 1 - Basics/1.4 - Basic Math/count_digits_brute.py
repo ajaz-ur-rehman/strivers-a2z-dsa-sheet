@@ -3,7 +3,7 @@
 # Example
 # count_digits(123) -> 3
 
-# Time complexity: O(log(n))
+# Time complexity: O(log10(n))
 # Space complexity: O(1)
 
 # How does it work?
