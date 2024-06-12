@@ -15,7 +15,7 @@
 # In each iteration, the function swaps the numbers and calculates the remainder of the division.
 # The function returns the first number when the second number becomes 0.
 
-def computeGcd(x, y):
+def compute_gcd(x, y):
     while y:
         x, y = y, x % y
     

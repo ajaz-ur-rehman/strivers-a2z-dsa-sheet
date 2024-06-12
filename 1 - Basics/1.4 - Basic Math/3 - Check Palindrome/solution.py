@@ -25,7 +25,7 @@
 
 # We are using 'rev' divided by 10 to handle odd-length palindromes to disregard the middle digit.
 
-def isPalindrome(x: int) -> bool:
+def is_palindrome(x: int) -> bool:
     if x == 0:
         return True
     elif x < 0 or x % 10 == 0:

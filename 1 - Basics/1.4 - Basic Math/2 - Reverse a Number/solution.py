@@ -25,7 +25,7 @@
 
 # Finally, the function returns the reversed number multiplied by the sign of the input number.
 
-def reverse(x: int) -> int:
+def reverse_number(x: int) -> int:
     sign = [1, -1][x < 0]
     rev, n = 0, abs(x)
 
