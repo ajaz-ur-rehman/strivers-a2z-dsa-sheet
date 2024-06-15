@@ -13,7 +13,7 @@
 # The function calls itself with N - 1 until N becomes 0.
 # The function prints the number after the recursive call.
 
-def printNos(N: int) -> None:
-    if N > 0:
-        printNos(N - 1)
-        print(N, end=" ")
+def printNos(n: int) -> None:
+    if n > 0:
+        printNos(n - 1)
+        print(n, end=" ")
