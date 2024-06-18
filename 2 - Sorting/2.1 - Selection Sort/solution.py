@@ -14,7 +14,7 @@
 # After that, we will swap the minimum element with the first element of the selected range(in step 1). 
 # Finally, after each iteration, we will find that the array is sorted up to the first index of the range. 
 
-def selection_sort(arr: list[int], n: int):
+def selection_sort(arr: list[int], n: int) -> None:
     for i in range(n):
         min_idx = i
         
