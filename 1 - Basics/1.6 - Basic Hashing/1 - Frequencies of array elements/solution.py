@@ -16,7 +16,7 @@
 # Then, we iterate over the array and increment the element at the index of the element modulo n + 1 by n + 1 to encode the frequency.
 # Finally, we iterate over the array and divide each element by n + 1 to decode the frequency.
 
-def frequencyCount(arr: list[int], n: int) -> None:
+def frequency_count(arr: list[int], n: int) -> None:
     for i in range(n):
         if arr[i] > n:
             arr[i] = 0

@@ -23,7 +23,7 @@
 # We increment the right pointer.
 # We return the result.
 
-def maxFrequency(nums: list[int], k: int) -> int:
+def max_frequency(nums: list[int], k: int) -> int:
     nums.sort()
 
     l, r = 0, 0
