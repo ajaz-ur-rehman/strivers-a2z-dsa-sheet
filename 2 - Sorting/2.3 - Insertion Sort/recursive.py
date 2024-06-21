@@ -17,7 +17,7 @@
 
 # Note: This is a stable sorting algorithm, meaning that the relative order of equal elements is preserved.
 
-def insertion_sort(arr: list[int], start: int = 1):
+def insertion_sort(arr: list[int], start: int = 1) -> None:
     n = len(arr)
     
     if start >= n:
