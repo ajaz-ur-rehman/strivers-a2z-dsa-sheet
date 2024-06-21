@@ -1,10 +1,10 @@
-# Write a function that takes in an array of integers and sorts it using Bubble Sort algorithm.
+# Write a function that takes in an array of integers and sorts it using Bubble Sort algorithm recursively.
 
 # Example
 # bubble_sort([64, 25, 12, 22, 11]) -> [11, 12, 22, 25, 64]
 
 # Time complexity: O(n^2)
-# Space complexity: O(1)
+# Space complexity: O(n)
 
 # How does it work?
 # Bubble Sort works by repeatedly swapping the adjacent elements if they are in the wrong order.
@@ -15,17 +15,3 @@
 # We repeat the process until the array is sorted.
 
 # Note: This is a stable sorting algorithm, meaning that the relative order of equal elements is preserved.
-
-def bubble_sort(arr: list[int]) -> None:
-    n = len(arr)
-    
-    for i in range(n - 1):
-        swapped = False
-        
-        for j in range(n - i - 1):
-            if arr[j] > arr[j + 1]:
-                arr[j], arr[j + 1] = arr[j + 1], arr[j]
-                swapped = True
-                
-        if not swapped:
-            break
