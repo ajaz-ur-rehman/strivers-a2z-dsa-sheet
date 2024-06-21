@@ -1,7 +1,7 @@
 # Write a function that takes in an array of integers and sorts it using Bubble Sort algorithm.
 
 # Example
-# bubble_sort([64, 25, 12, 22, 11], 5) -> [11, 12, 22, 25, 64]
+# bubble_sort([64, 25, 12, 22, 11]) -> [11, 12, 22, 25, 64]
 
 # Time complexity: O(n^2)
 # Space complexity: O(1)
@@ -14,8 +14,16 @@
 # After each iteration of the outer loop, the largest element will be placed at the end of the array.
 # We repeat the process until the array is sorted.
 
-def bubble_sort(arr: list[int], n: int) -> None:
+def bubble_sort(arr: list[int]) -> None:
+    n = len(arr)
+    
     for i in range(n - 1):
+        swapped = False
+        
         for j in range(n - i - 1):
             if arr[j] > arr[j + 1]:
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
+                swapped = True
+                
+        if not swapped:
+            break
