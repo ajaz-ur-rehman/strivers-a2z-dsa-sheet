@@ -4,6 +4,7 @@
 # insertion_sort([64, 25, 12, 22, 11]) -> [11, 12, 22, 25, 64]
 
 # Time complexity: O(n^2)
+# Best Case: O(n) when the array is already sorted.
 # Space complexity: O(n)
 
 # How does it work?
