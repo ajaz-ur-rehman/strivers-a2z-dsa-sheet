@@ -14,7 +14,7 @@
 
 # Note: This algorithm is unstable, meaning that the relative order of equal elements is not preserved.
 
-def recursive_selection_sort(arr: list[int], start: int = 0) -> None:
+def selection_sort(arr: list[int], start: int = 0) -> None:
     n = len(arr)
     
     if start >= n - 1:
@@ -28,5 +28,5 @@ def recursive_selection_sort(arr: list[int], start: int = 0) -> None:
             
     arr[start], arr[min_idx] = arr[min_idx], arr[start]
     
-    recursive_selection_sort(arr, start + 1)
+    selection_sort(arr, start + 1)
     
