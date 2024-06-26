@@ -1,7 +1,7 @@
 # Write a function that returns the largest element in a list of integers.
 
 # Example
-# largest_element([64, 25, 12, 22, 11], 5) -> 64
+# largest([64, 25, 12, 22, 11], 5) -> 64
 
 # Time complexity: O(n)
 # Space complexity: O(1)
@@ -10,7 +10,7 @@
 # We iterate over the array and store the largest element in a variable.
 # We return the largest element.
 
-def largest_element(arr: list[int], n: int) -> int:
+def largest(arr: list[int], n: int) -> int:
     if n == 0:
         return -1
     
